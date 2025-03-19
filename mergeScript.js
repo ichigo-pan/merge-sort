@@ -1,8 +1,12 @@
+// длина массива
 const arrSize = 50;
 let unsortedArray = [];
 while (unsortedArray.length < arrSize) {
+    // записываем во временную переменную случайное число
     num = Math.floor((Math.random() * arrSize) + 1);
+    // если такого числа ещё нет в массиве
     if (unsortedArray.indexOf(num) === -1) {
+        // записываем в массив
         unsortedArray.push(num);
     }
 }
